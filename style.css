@@ -1,0 +1,155 @@
+body {
+  text-align: center;
+  margin: 0px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container1 {
+  padding: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  font-size: 2rem;
+  text-align: left;
+  color: #497174;
+  flex-shrink: 0;
+}
+
+.container2 {
+  padding-top: 100px;
+  font-size: 2rem;
+  background-color: #eff5f5;
+}
+
+.profile-photo {
+  border-radius: 50%;
+}
+
+h3,
+h4 {
+  color: #497174;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  font-size: 2rem;
+  gap: 10px;
+  padding: 100px;
+}
+
+.project {
+  grid-column: span 3;
+}
+
+.project-type {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 15pt;
+  color: #497174;
+}
+
+.container4 {
+  background-color: #eff5f5;
+  height: 100px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 13pt;
+  color: #497174;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .container1 {
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .header-image {
+    height: 320px;
+  }
+
+  .header {
+    font-size: 30px;
+  }
+
+  .profile-photo {
+    height: 180px;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 430px 350px;
+  }
+
+  .model-c {
+    grid-column-start: -3;
+    grid-column: span 2;
+  }
+
+  .project-type {
+    margin-bottom: 50px;
+  }
+  .project-margin {
+    width: 70%;
+    margin: auto;
+  }
+
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    font-size: 25px;
+  }
+
+  .intro {
+    width: 80%;
+  }
+
+  .profile-photo {
+    height: 120px;
+  }
+
+  .project-margin {
+    width: 80%;
+  }
+
+  .header-image {
+    height: 200px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+}
